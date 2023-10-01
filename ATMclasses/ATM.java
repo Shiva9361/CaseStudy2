@@ -23,7 +23,7 @@ public class ATM extends BasicFunctions{
 
         System.out.println("Welcome to ATM!!");
 
-        Customer customer = new Customer(null, null, 0);
+        Customer customer = new Customer(null, null, 0,null);
         
         boolean isValidAccountNumber = false;
         while(!isValidAccountNumber){
@@ -59,6 +59,25 @@ public class ATM extends BasicFunctions{
         }
         if (isLoggedIn){
             this.menu(customer,sc);
+        }
+        else if(numberOfTriesRemaining==0){
+            boolean validChoice = false;
+            while(!validChoice){
+                System.out.println("Reset password?(Press 1 to reset,0 to quit)");
+                String choice = sc.nextLine();
+                if (choice.compareTo("1")==0){
+                    customer.resetPin(sc,customer);
+                    validChoice=true;
+                }
+                else if(choice.compareTo("0")==0) {
+                    validChoice=true;
+                } 
+                else{
+                    System.out.println("Invalid Choice!!");
+                }
+            }
+            login(sc);
+
         }
         else{
             System.out.println("Login Failed, Try again later");

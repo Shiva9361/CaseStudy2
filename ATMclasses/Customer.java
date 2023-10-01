@@ -1,5 +1,6 @@
 package CaseStudy2.ATMclasses;
 import java.util.ArrayList;
+import java.util.Scanner;
 /*
  * Customer is implemented as a class, This class can be used to initialize customers
  * This class also has all methods/details related to an account holder of the bank needed by the ATM
@@ -8,6 +9,7 @@ public class Customer {
     private String accountNumber;
     private String pin;
     private int accountBalance;
+    private String securitykey;
     /*
      * Static methods of class 
      */
@@ -29,16 +31,17 @@ public class Customer {
                 return customer;
             }
         }
-        return new Customer(null, null, 0);
+        return new Customer(null, null, 0,null);
     }
     /*
      * Non-Static methods
      */
 
-    public Customer(String accountNumber,String pin,int accountBalance){
+    public Customer(String accountNumber,String pin,int accountBalance,String securitykey){
         this.accountNumber=accountNumber;
         this.pin=pin;
         this.accountBalance=accountBalance;
+        this.securitykey=securitykey;
     }
     
     boolean pinChecker(String pin){
@@ -60,11 +63,45 @@ public class Customer {
     String accountNumberGetter(){
         return this.accountNumber;
     }
+    String securitykeyGetter(){
+        return this.securitykey;
+    }
     // Method to check if the required amount can be withdrawn from the customer's account
     boolean transactionPossibile(int cash){
         if (cash>this.accountBalance){
             return false;
         }
         return true;
+    }
+    /*
+     * This method is used to reset forgotton pin
+     * In order to make sure that a third party dosen't get access to the account,
+     * A Unique security key is alloted to the customer which can be accessed from the bank website
+     * If unavailabe, The key will be sent to the registered phone number on request
+     */
+    void resetPin(Scanner sc,Customer customer){
+        System.out.println("Enter your security bypass key found in your account page(website)\nIf unsure get in touch with the bank to get your security bypass key");
+        boolean validChoice = false;
+        while(!validChoice){
+            System.out.println("Do you have the key?(Press 1 for yes,0 to quit)");
+            String choice = sc.nextLine();
+            if (choice.compareTo("1")==0){
+                String securitykey = sc.nextLine();
+                if (securitykey.compareTo(this.securitykey)==0){
+                    System.out.println("Enter new pin: ");
+                    String pin = sc.nextLine();
+                    this.pin=pin;
+                    System.out.println("Pin Updated, Please try to remember your pin!");
+                }
+                validChoice=true;
+            }
+            else if(choice.compareTo("0")==0) {
+                System.out.println("Exiting ..");
+                validChoice=true;
+            } 
+            else{
+                System.out.println("Invalid Choice!!");
+            }
+        }
     }
 }
