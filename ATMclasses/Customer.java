@@ -86,6 +86,7 @@ public class Customer {
             System.out.println("Do you have the key?(Press 1 for yes,0 to quit)");
             String choice = sc.nextLine();
             if (choice.compareTo("1")==0){
+                System.out.println("Enter Security key: ");
                 String securitykey = sc.nextLine();
                 if (securitykey.compareTo(this.securitykey)==0){
                     System.out.println("Enter new pin: ");
