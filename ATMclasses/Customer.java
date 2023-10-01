@@ -5,7 +5,7 @@ import java.util.ArrayList;
  * This class also has all methods/details related to an account holder of the bank needed by the ATM
  */
 public class Customer {
-    public String accountNumber;
+    private String accountNumber;
     private String pin;
     private int accountBalance;
     /*
@@ -56,6 +56,9 @@ public class Customer {
     }
     void accountBalanceDecrementer(int cash){
         this.accountBalance-=cash;
+    }
+    String accountNumberGetter(){
+        return this.accountNumber;
     }
     // Method to check if the required amount can be withdrawn from the customer's account
     boolean transactionPossibile(int cash){

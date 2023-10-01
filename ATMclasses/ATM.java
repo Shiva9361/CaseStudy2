@@ -31,7 +31,7 @@ public class ATM extends BasicFunctions{
             String accountNumber = sc.nextLine();
             if (Customer.accountChecker(accountNumber, this.customers)){
                 customer = Customer.customerObjectFinder(accountNumber, this.customers);
-                if (customer.accountNumber == null){
+                if (customer.accountNumberGetter() == null){
                     System.out.println("Account number is wrong,Try again");
                 }
                 else{
