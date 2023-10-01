@@ -41,14 +41,14 @@ interface Transactions {
         System.out.println("Enter number of 2000 Rupee notes: ");
         int twoThousand = sc.nextInt();sc.nextLine();
 
-        cashInATM[0]-=twoThousand;
-        cashInATM[1]-=fivehundred;
-        cashInATM[2]-=hundred;
-        cashInATM[3]-=fifty;
-        cashInATM[4]-=ten;
-        cashInATM[5]-=five;
-        cashInATM[6]-=two;
-        cashInATM[7]-=one;
+        cashInATM[0]+=twoThousand;
+        cashInATM[1]+=fivehundred;
+        cashInATM[2]+=hundred;
+        cashInATM[3]+=fifty;
+        cashInATM[4]+=ten;
+        cashInATM[5]+=five;
+        cashInATM[6]+=two;
+        cashInATM[7]+=one;
     
         return 1*one+two*2+five*5+ten*10+fifty*50+hundred*100+fivehundred*500+twoThousand*2000;
     }
