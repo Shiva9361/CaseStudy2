@@ -24,7 +24,7 @@ public class Customer {
         }
         return false;
     }
-
+    // Method to find the customer object from account number and return it
     static Customer customerObjectFinder(String accountNumber,ArrayList<Customer> customers){
         for (Customer customer:customers){
             if (customer.accountNumber.compareTo(accountNumber)==0){
@@ -50,7 +50,9 @@ public class Customer {
         }
         return false;
     }
-    // As Account balance is private, getters and setters are used
+    /*
+     * Getters and setter for all private variables that need to accessed from somewhere else
+     */
     int accountBalanceGetter(){
         return this.accountBalance;
     }

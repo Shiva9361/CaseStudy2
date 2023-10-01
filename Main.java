@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import CaseStudy2.ATMclasses.*;
 /*
- * The main class is defined seperate from the all the other classes to make effective use of protected keyword
+ * The main class is defined in seperate package from the all the other classes to make effective use of protected keyword
  */
 public class Main{
     public static void main(String[] args) {

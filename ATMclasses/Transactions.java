@@ -40,7 +40,9 @@ interface Transactions {
         
         System.out.println("Enter number of 2000 Rupee notes: ");
         int twoThousand = sc.nextInt();sc.nextLine();
-
+        /*
+         * As this money is deposited in the atm, The atm can use it when someone else withdraws
+         */
         cashInATM[0]+=twoThousand;
         cashInATM[1]+=fivehundred;
         cashInATM[2]+=hundred;
@@ -57,7 +59,7 @@ interface Transactions {
         /*
          * Assuming that the atm has a way to dispence coins too
          */
-        int givencash = cash;
+        int givencash = cash;// Using this as a temproary variable to remember the money to be dispensed
         int one=0,two=0,five=0,ten=0,fifty=0,hundred=0,fivehundred=0,twoThousand=0;
         while(cash>=2000 && cashInATM[0]-twoThousand>0){
             cash-=2000;
@@ -91,9 +93,15 @@ interface Transactions {
             cash-=1;
             one+=1;
         }
+        /*
+         * If after all the loops, cash is positive, it means the ATM dosen't have the required denominations
+         */
         if (cash>0){
             System.out.println("ATM does't have enough notes");
         }
+        /*
+         * Removing the notes from memory as it has been dispensed to the person who withdrew money
+         */
         else{
             cashInATM[0]-=twoThousand;
             cashInATM[1]-=fivehundred;
@@ -104,7 +112,9 @@ interface Transactions {
             cashInATM[6]-=two;
             cashInATM[7]-=one;
             customer.accountBalanceDecrementer(givencash);
-            
+            /*
+             * Printing the money dispensed out as there is no real hardware as of now
+             */
             System.out.println("number of 1 Rupee coins: "+one);
             System.out.println("number of 2 Rupee coins: "+two);
             System.out.println("number of 5 Rupee coins: "+five);
@@ -113,7 +123,7 @@ interface Transactions {
             System.out.println("number of 100 Rupee notes: "+hundred);
             System.out.println("number of 500 Rupee notes: "+fivehundred);
             System.out.println("number of 2000 Rupee notes: "+twoThousand);
-            
+            // Finally printing the balance
             System.out.println("Account Balance : "+customer.accountBalanceGetter());
         }
     }
