@@ -1,0 +1,112 @@
+Use CTRL+C to close the ATM
+ATM does not have option to quit
+Required because of nature of ATMs
+
+Welcome to ATM!!
+Enter your account number to proceed
+1
+Account number is wrong,Try again
+Enter your account number to proceed
+23456
+Enter your pin
+4
+Wrong pin, 2 attempts remaining
+Enter your pin
+4
+Wrong pin, 1 attempts remaining
+Enter your pin
+4
+Wrong pin, 0 attempts remaining
+Reset password?(Press 1 to reset,0 to quit)
+1
+Enter your security bypass key found in your account page(website)
+If unsure get in touch with the bank to get your security bypass key
+Do you have the key?(Press 1 for yes,0 to quit)
+1
+Enter Security key:
+aa
+Enter new pin:
+123
+Pin Updated, Please try to remember your pin!
+Welcome to ATM!!
+Enter your account number to proceed
+23456
+Enter your pin
+123
+Successfully Logged in!!
+Menu
+Press 1 to check balance
+Press 2 to deposit cash
+Press 3 to withdraw cash
+Press 0 to quit
+1
+Account Balance : 18697
+Menu
+Press 1 to check balance
+Press 2 to deposit cash
+Press 3 to withdraw cash
+Press 0 to quit
+2
+Enter number of 1 Rupee coins:
+2
+Enter number of 2 Rupee coins:
+0
+Enter number of 5 Rupee coins:
+2
+Enter number of 10 Rupee notes:
+12
+Enter number of 50 Rupee notes:
+0
+Enter number of 100 Rupee notes:
+0
+Enter number of 500 Rupee notes:
+0
+Enter number of 2000 Rupee notes:
+1
+Deposited amount : 2132
+New Account Balance : 20829
+Menu
+Press 1 to check balance
+Press 2 to deposit cash
+Press 3 to withdraw cash
+Press 0 to quit
+3
+Enter amout to withdraw:
+1234567
+Account balance not sufficient!!
+Menu
+Press 1 to check balance
+Press 2 to deposit cash
+Press 3 to withdraw cash
+Press 0 to quit
+3
+Enter amout to withdraw:
+3000
+number of 1 Rupee coins: 0
+number of 2 Rupee coins: 0
+number of 5 Rupee coins: 0
+number of 10 Rupee notes: 0
+number of 50 Rupee notes: 0
+number of 100 Rupee notes: 0
+number of 500 Rupee notes: 2
+number of 2000 Rupee notes: 1
+Account Balance : 17829
+Menu
+Press 1 to check balance
+Press 2 to deposit cash
+Press 3 to withdraw cash
+Press 0 to quit
+3
+Enter amout to withdraw:
+3000
+ATM does't have enough notes
+Menu
+Press 1 to check balance
+Press 2 to deposit cash
+Press 3 to withdraw cash
+Press 0 to quit
+0
+Welcome to ATM!!
+Enter your account number to proceed
+//
+(CTRL+C was done)
