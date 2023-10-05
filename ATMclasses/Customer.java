@@ -96,6 +96,9 @@ public class Customer {
                     this.pin=pin;
                     System.out.println("Pin Updated, Please try to remember your pin!");
                 }
+                else{
+                    System.out.println("Wrong key,Try again later");
+                }
                 validChoice=true;
             }
             else if(choice.compareTo("0")==0) {
