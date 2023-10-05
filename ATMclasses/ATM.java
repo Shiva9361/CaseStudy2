@@ -20,7 +20,7 @@ public class ATM extends BasicFunctions{
     protected void login(Scanner sc){
         // Resetting the number of tries for each refresh of login
         this.numberOfTriesRemaining=3;
-
+        
         System.out.println("Welcome to ATM!!");
         // Creating a customer object that is initialized to the correct object if both account number and pin is correct
         Customer customer = new Customer(null, null, 0,null);
