@@ -1,8 +1,6 @@
-package CaseStudy2;
-
 import java.util.ArrayList;
 import java.util.Scanner;
-import CaseStudy2.ATMclasses.*;
+import ATMclasses.*;
 /*
  * The main class is defined in seperate package from the all the other classes to make effective use of protected keyword
  */

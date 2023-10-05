@@ -1,4 +1,4 @@
-package CaseStudy2.ATMclasses;
+package ATMclasses;
 import java.util.Scanner;
 import java.util.ArrayList;
 
