@@ -12,7 +12,7 @@ abstract class BasicFunctions implements Transactions {
     abstract protected void login(Scanner sc);
     //Implementation of the inherited deposit and withdraw methods
     public void Deposit(Scanner sc,Customer customer){
-        int cash = denominationsToCash(sc,this.cashInATM);
+        int cash = cashDenominationConverter(sc,this.cashInATM);
         System.out.println("Deposited amount : "+cash);
         customer.accountBalanceIncrementer(cash);
         System.out.println("New Account Balance : "+customer.accountBalanceGetter());
@@ -24,7 +24,7 @@ abstract class BasicFunctions implements Transactions {
             System.out.println("Account balance not sufficient!!");
         }
         else{
-            cashtoDenomination(cash, this.cashInATM, customer);
+            cashDenominationConverter(cash, cashInATM, customer);
         }
     }
     /*

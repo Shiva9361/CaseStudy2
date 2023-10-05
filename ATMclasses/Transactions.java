@@ -16,7 +16,7 @@ interface Transactions {
     /*
      * Method to convert denominations given by customer cash 
      */
-    default int denominationsToCash(Scanner sc,int[] cashInATM){
+    default int cashDenominationConverter(Scanner sc,int[] cashInATM){
         System.out.println("Enter number of 1 Rupee coins: ");
         int one = sc.nextInt();
         
@@ -55,7 +55,7 @@ interface Transactions {
         return 1*one+two*2+five*5+ten*10+fifty*50+hundred*100+fivehundred*500+twoThousand*2000;
     }
     
-    default void cashtoDenomination(int cash,int[] cashInATM,Customer customer){
+    default void cashDenominationConverter(int cash,int[] cashInATM,Customer customer){
         /*
          * Assuming that the atm has a way to dispence coins too
          */
