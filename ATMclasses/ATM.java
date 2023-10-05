@@ -23,7 +23,7 @@ public class ATM extends BasicFunctions{
         
         System.out.println("Welcome to ATM!!");
         // Creating a customer object that is initialized to the correct object if both account number and pin is correct
-        Customer customer = new Customer(null, null, 0,null);
+        Customer customer = new Customer(null, null, 0,null,null,null,null);
         // Looping until vaild Account number is given 
         boolean isValidAccountNumber = false;
         while(!isValidAccountNumber){

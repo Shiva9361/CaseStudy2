@@ -9,6 +9,9 @@ public class Customer {
     private String accountNumber;
     private String pin;
     private int accountBalance;
+    private String customerName;
+    private String address;
+    private String phoneNumber;
     private String securitykey;
     /*
      * Static methods of class 
@@ -31,13 +34,13 @@ public class Customer {
                 return customer;
             }
         }
-        return new Customer(null, null, 0,null);
+        return new Customer(null, null, 0,null,null,null,null);
     }
     /*
      * Non-Static methods
      */
 
-    public Customer(String accountNumber,String pin,int accountBalance,String securitykey){
+    public Customer(String accountNumber,String pin,int accountBalance,String securitykey,String customerName,String address,String phoneNumber){
         this.accountNumber=accountNumber;
         this.pin=pin;
         this.accountBalance=accountBalance;
@@ -53,6 +56,24 @@ public class Customer {
     /*
      * Getters and setter for all private variables that need to accessed from somewhere else
      */
+    void customerNameSetter(String customerName){
+        this.customerName=customerName;
+    }
+    void addressSetter(String address){
+        this.address=address;
+    }
+    void phoneNumberSetter(String phoneNumber){
+        this.phoneNumber=phoneNumber;
+    }
+    String customerNameGetter(){
+        return this.customerName;
+    }
+    String addressGetter(){
+        return this.address;
+    }
+    String phoneNumberGetter(){
+        return this.phoneNumber;
+    }
     int accountBalanceGetter(){
         return this.accountBalance;
     }

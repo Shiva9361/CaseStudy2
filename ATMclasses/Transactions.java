@@ -11,8 +11,8 @@ interface Transactions {
     /*
      * Methods to deposit and withdraw cash, Implemneted in BasicFunctions
      */
-    public void Deposit(Scanner sc,Customer customer);
-    public void Withdraw(Scanner sc,Customer customer); 
+    public void deposit(Scanner sc,Customer customer);
+    public void withdraw(Scanner sc,Customer customer); 
     /*
      * Method to convert denominations given by customer cash 
      */
