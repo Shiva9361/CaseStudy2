@@ -28,7 +28,7 @@ abstract class BasicFunctions implements Transactions {
         }
     }
     public void update(Scanner sc,Customer customer){
-        System.out.println("Press 1 to update name\nPress 2 to update address\n Press 3 to update phone number");
+        System.out.println("Press 1 to update name\nPress 2 to update address\nPress 3 to update phone number");
         int choice = sc.nextInt();sc.nextLine();
         if (choice==1){
             System.out.println("Enter correct name: ");
