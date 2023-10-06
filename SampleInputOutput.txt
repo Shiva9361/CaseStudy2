@@ -4,18 +4,15 @@ Required because of nature of ATMs
 
 Welcome to ATM!!
 Enter your account number to proceed
-1
-Account number is wrong,Try again
-Enter your account number to proceed
 23456
 Enter your pin
-4
+1
 Wrong pin, 2 attempts remaining
 Enter your pin
-4
+1
 Wrong pin, 1 attempts remaining
 Enter your pin
-4
+1
 Wrong pin, 0 attempts remaining
 Reset password?(Press 1 to reset,0 to quit)
 1
@@ -26,18 +23,19 @@ Do you have the key?(Press 1 for yes,0 to quit)
 Enter Security key:
 aa
 Enter new pin:
-123
+2345
 Pin Updated, Please try to remember your pin!
 Welcome to ATM!!
 Enter your account number to proceed
 23456
 Enter your pin
-123
+2345
 Successfully Logged in!!
 Menu
 Press 1 to check balance
 Press 2 to deposit cash
 Press 3 to withdraw cash
+Press 4 to update basic details
 Press 0 to quit
 1
 Account Balance : 18697
@@ -45,6 +43,7 @@ Menu
 Press 1 to check balance
 Press 2 to deposit cash
 Press 3 to withdraw cash
+Press 4 to update basic details
 Press 0 to quit
 2
 Enter number of 1 Rupee coins:
@@ -52,61 +51,96 @@ Enter number of 1 Rupee coins:
 Enter number of 2 Rupee coins:
 0
 Enter number of 5 Rupee coins:
-2
+0
 Enter number of 10 Rupee notes:
-12
+0
 Enter number of 50 Rupee notes:
 0
 Enter number of 100 Rupee notes:
 0
 Enter number of 500 Rupee notes:
-0
+4
 Enter number of 2000 Rupee notes:
-1
-Deposited amount : 2132
-New Account Balance : 20829
+5
+Deposited amount : 12002
+New Account Balance : 30699
 Menu
 Press 1 to check balance
 Press 2 to deposit cash
 Press 3 to withdraw cash
+Press 4 to update basic details
 Press 0 to quit
 3
 Enter amout to withdraw:
-1234567
-Account balance not sufficient!!
-Menu
-Press 1 to check balance
-Press 2 to deposit cash
-Press 3 to withdraw cash
-Press 0 to quit
-3
-Enter amout to withdraw:
-3000
-number of 1 Rupee coins: 0
-number of 2 Rupee coins: 0
-number of 5 Rupee coins: 0
-number of 10 Rupee notes: 0
-number of 50 Rupee notes: 0
-number of 100 Rupee notes: 0
-number of 500 Rupee notes: 2
-number of 2000 Rupee notes: 1
-Account Balance : 17829
-Menu
-Press 1 to check balance
-Press 2 to deposit cash
-Press 3 to withdraw cash
-Press 0 to quit
-3
-Enter amout to withdraw:
-3000
+30000
 ATM does't have enough notes
 Menu
 Press 1 to check balance
 Press 2 to deposit cash
 Press 3 to withdraw cash
+Press 4 to update basic details
+Press 0 to quit
+3
+Enter amout to withdraw:
+100
+number of 1 Rupee coins: 0
+number of 2 Rupee coins: 0
+number of 5 Rupee coins: 0
+number of 10 Rupee notes: 0
+number of 50 Rupee notes: 0
+number of 100 Rupee notes: 1
+number of 500 Rupee notes: 0
+number of 2000 Rupee notes: 0
+Account Balance : 30599
+Menu
+Press 1 to check balance
+Press 2 to deposit cash
+Press 3 to withdraw cash
+Press 4 to update basic details
+Press 0 to quit
+4
+Press 1 to update name
+Press 2 to update address
+Press 3 to update phone number
+1
+Enter correct name:
+shiva
+Updated Name: shiva
+Menu
+Press 1 to check balance
+Press 2 to deposit cash
+Press 3 to withdraw cash
+Press 4 to update basic details
+Press 0 to quit
+4
+Press 1 to update name
+Press 2 to update address
+Press 3 to update phone number
+2
+Enter correct address:
+iit tiupati des hostel
+Updated address: iit tiupati des hostel
+Menu
+Press 1 to check balance
+Press 2 to deposit cash
+Press 3 to withdraw cash
+Press 4 to update basic details
+Press 0 to quit
+4
+Press 1 to update name
+Press 2 to update address
+Press 3 to update phone number
+3
+Enter correct phone number:
+9999999999
+Updated phone number: 9999999999
+Menu
+Press 1 to check balance
+Press 2 to deposit cash
+Press 3 to withdraw cash
+Press 4 to update basic details
 Press 0 to quit
 0
 Welcome to ATM!!
 Enter your account number to proceed
-//
-(CTRL+C was done)
+Exception in thread "main" java.util.NoSuchElementException: No line found // Due to using CTRL+C
